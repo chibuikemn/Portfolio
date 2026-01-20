@@ -1,15 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  padding-top: 70px;
 }
 
-h1 {
-    text-align: center;
-    margin: 2rem 0;
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
 }
