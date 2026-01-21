@@ -22,7 +22,7 @@
     <!-- Header -->
     <header class="cv-header">
       <h1>Chibuikem Nwoji</h1>
-      <p class="subtitle">Software Engineer & Data Analyst</p>
+      <p class="subtitle">Choose Resume Type</p>
       <div class="contact-info">
         <span>chibuikemnwoji@gmail.com</span>
         <span>•</span>
@@ -31,15 +31,24 @@
         <a href="https://linkedin.com/in/chibuikem-nwabueze-nwoji" target="_blank">LinkedIn</a>
       </div>
       
-      <!-- Resume Toggle Buttons -->
-      <div class="resume-toggle">
-        <button class="toggle-btn active" onclick="showResume('software')">Software Engineering</button>
-        <button class="toggle-btn" onclick="showResume('data')">Data Analysis</button>
+      <!-- Resume Selection Buttons -->
+      <div class="resume-selection">
+        <button class="resume-btn" onclick="showResume('software')">
+          <h3>Software Engineering</h3>
+          <p>Backend • APIs • System Design</p>
+        </button>
+        <button class="resume-btn" onclick="showResume('data')">
+          <h3>Data Analysis</h3>
+          <p>Analytics • ML • Automation</p>
+        </button>
       </div>
     </header>
 
     <!-- Software Engineering Resume -->
-    <div id="software-resume" class="resume-content">
+    <div id="software-resume" class="resume-content" style="display: none;">
+      <div class="back-btn-container">
+        <button class="back-btn" onclick="hideResume()">← Back to Resume Selection</button>
+      </div>
       <!-- Experience -->
       <section class="cv-section">
         <h2>Experience</h2>
@@ -129,6 +138,9 @@
 
     <!-- Data Analysis Resume -->
     <div id="data-resume" class="resume-content" style="display: none;">
+      <div class="back-btn-container">
+        <button class="back-btn" onclick="hideResume()">← Back to Resume Selection</button>
+      </div>
       <!-- Experience -->
       <section class="cv-section">
         <h2>Experience</h2>
@@ -235,21 +247,24 @@
 
 <script>
 function showResume(type) {
+  // Hide selection buttons
+  document.querySelector('.cv-header').style.display = 'none';
+  
+  // Show selected resume
+  if (type === 'software') {
+    document.getElementById('software-resume').style.display = 'block';
+  } else {
+    document.getElementById('data-resume').style.display = 'block';
+  }
+}
+
+function hideResume() {
   // Hide all resume content
   document.getElementById('software-resume').style.display = 'none';
   document.getElementById('data-resume').style.display = 'none';
   
-  // Remove active class from all buttons
-  document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
-  
-  // Show selected resume and activate button
-  if (type === 'software') {
-    document.getElementById('software-resume').style.display = 'block';
-    document.querySelector('[onclick="showResume(\'software\')"]').classList.add('active');
-  } else {
-    document.getElementById('data-resume').style.display = 'block';
-    document.querySelector('[onclick="showResume(\'data\')"]').classList.add('active');
-  }
+  // Show selection buttons
+  document.querySelector('.cv-header').style.display = 'block';
 }
 </script>
 
