@@ -93,6 +93,35 @@ footer {
   opacity: 1;
 }
 
+/* Skills Cards */
+.skill-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.skill-card h5 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
 .timeline {
   position: relative;
   max-width: 900px;
