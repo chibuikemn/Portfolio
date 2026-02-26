@@ -122,6 +122,16 @@ footer {
   line-height: 1.6;
 }
 
+/* Project Image */
+.project-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #333;
+}
+
 .timeline {
   position: relative;
   max-width: 900px;
