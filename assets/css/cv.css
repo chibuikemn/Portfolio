@@ -21,6 +21,7 @@ body {
 /* Home Button */
 .home-btn-container {
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .home-btn {
