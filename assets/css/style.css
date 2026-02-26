@@ -60,6 +60,39 @@ footer {
   background: #0a0a0a !important;
 }
 
+/* Projects Page */
+.projects-header {
+  min-height: 40vh;
+  background: #0a0a0a;
+  color: white;
+  position: relative;
+  padding-top: 70px;
+}
+
+.projects-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.projects-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.future-project {
+  opacity: 0.8;
+}
+
+.future-project:hover {
+  opacity: 1;
+}
+
 .timeline {
   position: relative;
   max-width: 900px;

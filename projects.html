@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chibuikem | Software Engineer</title>
+  <title>Chibuikem | Projects</title>
 
   <!-- Bootstrap CSS -->
   <link
@@ -19,7 +19,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Chibuikem</a>
+    <a class="navbar-brand" href="index.html">Chibuikem</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -27,29 +27,26 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero d-flex align-items-center">
+<!-- PROJECTS HEADER -->
+<section class="projects-header d-flex align-items-center">
   <div class="container text-center">
-    <h1 class="fw-bold">Hi, I'm Chibuikem 👋</h1>
-    <p class="lead">
-      Software Engineer | Backend • APIs • Automation
-    </p>
-    <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    <h1 class="fw-bold">My Projects</h1>
+    <p class="lead">Building systems that scale and matter</p>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="py-5">
+<!-- CURRENT PROJECTS -->
+<section class="py-5">
   <div class="container">
-    <h2 class="text-center mb-5">Top Projects</h2>
+    <h2 class="text-center mb-5">Current Projects</h2>
     <div class="row g-4">
 
       <!-- 1. API Aggregator Dashboard -->
@@ -227,140 +224,35 @@
   </div>
 </section>
 
-<!-- RESUME HIGHLIGHTS -->
-<section id="resume" class="bg-light py-5">
+<!-- FUTURE PROJECTS -->
+<section class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Resume Highlights</h2>
+    <h2 class="text-center mb-5">Future Projects</h2>
+    <div class="row g-4">
 
-    <div class="row">
-      <div class="col-md-6">
-        <h5>API Aggregator Dashboard</h5>
-        <ul>
-          <li>Built a full-stack dashboard aggregating data from multiple third-party APIs.</li>
-          <li>Designed RESTful endpoints using Node.js and Express.</li>
-          <li>Centralized disparate data sources into a single UI.</li>
-        </ul>
-
-        <h5>Job Scouter – Automation Tool</h5>
-        <ul>
-          <li>Developed a Python automation tool to scrape and analyze job listings.</li>
-          <li>Implemented a scoring algorithm to rank job relevance.</li>
-          <li>Automated structured job tracking for application management.</li>
-        </ul>
+      <!-- Future Project Template -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 future-project">
+          <div class="card-body">
+            <h5 class="card-title">
+              Project Name
+              <span class="badge bg-secondary ms-2">Planned</span>
+            </h5>
+            <p class="card-text">
+              Brief description of the planned project and its goals.
+            </p>
+            <ul class="small">
+              <li>Planned technology 1</li>
+              <li>Planned technology 2</li>
+              <li>Planned technology 3</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-6">
-        <h5>Multiplayer Game Platform</h5>
-        <ul>
-          <li>Built a real-time multiplayer game using Socket.IO and Express.</li>
-          <li>Implemented lobby systems and synchronized game states.</li>
-          <li>Designed scalable real-time client-server communication.</li>
-        </ul>
+      <!-- Add more future projects here -->
 
-        <h5>AI Academic Advisor Chatbot</h5>
-        <ul>
-          <li>Created an AI-powered academic advisor using Java and OpenAI API.</li>
-          <li>Integrated structured knowledge sources for accurate responses.</li>
-          <li>Simulated real-world academic advising workflows.</li>
-        </ul>
-
-        <h5>SCADA Internship</h5>
-        <ul>
-          <li>Worked with SCADA systems in an industrial environment.</li>
-          <li>Assisted in monitoring system data flows and reliability.</li>
-        </ul>
-      </div>
     </div>
-  </div>
-</section>
-
-<!-- TIMELINE -->
-<section id="timeline" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">🕒 My Journey</h2>
-    
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-year">2021</div>
-        <div class="timeline-content">
-          <h5>Foundation Years</h5>
-          <p>Started Computer Science journey at Abilene Christian University. Built foundations in programming, data structures, and problem-solving with early exposure to Java and Python.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2022</div>
-        <div class="timeline-content">
-          <h5>First Real Builds</h5>
-          <p>Built early Java-based applications and worked on game logic and OOP-heavy systems. Learned how to structure larger codebases and debug real issues.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2023</div>
-        <div class="timeline-content">
-          <h5>Systems, Games & Real-Time Thinking</h5>
-          <p>Developed a multiplayer game using Node.js, Express, Socket.IO with real-time mechanics, game lobbies, and scoring logic. Strengthened backend thinking and event-driven architecture.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2024</div>
-        <div class="timeline-content">
-          <h5>Applied Software & Automation</h5>
-          <p>Built Job Scouter Python tool for job aggregation & matching. Worked as SCADA Intern gaining exposure to industrial systems and real-world constraints.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">Late 2024</div>
-        <div class="timeline-content">
-          <h5>AI & Data Direction</h5>
-          <p>Built multiple chatbot systems using Java and OpenAI API. Started FaceTracking ASL project focusing on computer vision + ML concepts for translating hand signs.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2025</div>
-        <div class="timeline-content">
-          <h5>Portfolio-Level Engineering</h5>
-          <p>Built API Aggregator Dashboard with Node.js + Express backend. Focused on portfolio-quality code and preparing for full-time engineering roles. Graduating May 2025.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">Now</div>
-        <div class="timeline-content">
-          <h5>Building Systems That Scale</h5>
-          <p>Refining portfolio and GitHub presence. Improving system design, APIs, and backend reliability while preparing for Software Engineering and Backend Development roles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-3">Java</div>
-      <div class="col-md-3">Python</div>
-      <div class="col-md-3">Node.js</div>
-      <div class="col-md-3">SQL</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-5 text-center">
-  <div class="container">
-    <h2>Let's Connect</h2>
-    <p>Email: <a href="mailto:chibuikemnwoji@gmail.com">chibuikemnwoji@gmail.com</a></p>
-    <p>
-      <a href="https://github.com/chibuikemn" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/chibuikem-nwabueze-nwoji" target="_blank">LinkedIn</a>
-    </p>
   </div>
 </section>
 
